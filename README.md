@@ -12,7 +12,7 @@ Feature: Log to application
 *namespace must be equal to your .dll name
 
 ### 2. Create empty Test Cases in TFS and add tags with id to scenario:
-![Selenoid Animation](Docs/Img/empty_case.jpg)
+![Empty case](Docs/Img/empty_case.jpg)
 ```gherkin
 @2122409 @posistive
 Scenario: Successful authorization
@@ -30,8 +30,8 @@ FeatureSync.exe -f C:\FolderWithFeatures -s https://tfs.server.com/collection -t
 ```
 
 I run FeatureSync after buld of test solution
-![Selenoid Animation](Docs/Img/build_def.jpg)
+![Buld definition](Docs/Img/build_def.jpg)
 
-### ?. Profit
-![Selenoid Animation](Docs/Img/sync_case.jpg)
-![Selenoid Animation](Docs/Img/automation_case.jpg)
+### Profit
+![Sync case](Docs/Img/sync_case.jpg)
+![Automation](Docs/Img/automation_case.jpg)
