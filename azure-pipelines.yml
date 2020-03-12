@@ -26,15 +26,14 @@ steps:
     solution: '$(solution)'
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
-- task: GitHubRelease@1
+
+- task: GithubRelease@0 
+  displayName: 'Create GitHub Release'      
   inputs:
     gitHubConnection: 'github.com_kharakhorin'
     repositoryName: 'kharakhorin/FeatureSync'
-    action: 'create'
-    target: '$(Build.SourceVersion)'
-    tagSource: 'userSpecifiedTag'
-    tag: '$(date:yyyyMMdd)$(rev:.r)'
-    title: 'FeatureSync'
-    releaseNotesSource: 'inline'
-    assets: '$(Build.ArtifactStagingDirectory)/FeatureSync/bin/Release/netcoreapp3.0/*'
-    addChangeLog: false
+    tagSource: manual
+    tag: $(Build.BuildNumber)  
+    title: 'FeatureSync'    
+    assets: |
+         $(Build.SourcesDirectory)/FeatureSync/bin/Release/netcoreapp3.0/*
