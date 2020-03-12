@@ -29,7 +29,7 @@ steps:
 
 - task: ArchiveFiles@2
   inputs:
-    rootFolderOrFile: '$(Build.SourcesDirectory)/FeatureSync/bin/Release/netcoreapp3.0/*'
+    rootFolderOrFile: '$(Build.SourcesDirectory)/FeatureSync/bin/Release/netcoreapp3.0/'
     includeRootFolder: false
     archiveType: 'zip'
     archiveFile: '$(Build.ArtifactStagingDirectory)/FeatureSync.zip'
