@@ -29,7 +29,7 @@ steps:
 - task: GithubRelease@0 
   displayName: 'Create GitHub Release'      
   inputs:
-    gitHubConnection: kharakhorin
+    gitHubConnection: github.com_kharakhorin
     repositoryName: kharakhorin/FeatureSync
     tagSource: manual
     tag: $(Build.BuildNumber)      
