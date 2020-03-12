@@ -26,13 +26,13 @@ steps:
     solution: '$(solution)'
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
-- task: GithubRelease@0 
-  displayName: 'Create GitHub Release'      
+- task: GitHubRelease@1
   inputs:
-    gitHubConnection: github.com_kharakhorin
-    repositoryName: kharakhorin/FeatureSync
-    tagSource: manual
-    tag: $(Build.BuildNumber)      
-    assets: |
-         $(Build.ArtifactStagingDirectory)/*.exe
-         $(Build.ArtifactStagingDirectory)/*.dll
+    gitHubConnection: 'github.com_kharakhorin'
+    repositoryName: 'kharakhorin/FeatureSync'
+    action: 'create'
+    target: '$(Build.SourceVersion)'
+    tagSource: 'gitTag'
+    title: 'FeatureSync'
+    releaseNotesSource: 'inline'
+    addChangeLog: false
