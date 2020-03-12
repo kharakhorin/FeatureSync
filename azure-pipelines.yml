@@ -33,7 +33,8 @@ steps:
     action: 'create'
     target: '$(Build.SourceVersion)'
     tagSource: 'userSpecifiedTag'
-    tag: '$(Build.Number)'
+    tag: '$(date:yyyyMMdd)$(rev:.r)'
     title: 'FeatureSync'
     releaseNotesSource: 'inline'
+    assets: '$(Build.ArtifactStagingDirectory)/FeatureSync/bin/Release/netcoreapp3.0/*'
     addChangeLog: false
