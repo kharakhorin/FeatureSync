@@ -33,9 +33,9 @@ FeatureSync.exe -f C:\FolderWithFeatures -s https://tfs.server.com/collection -t
 
 I run FeatureSync after buld of test solution
 
-![Buld definition](https://github.com/kharakhorin/FeatureSync/blob/master/Docs/Img/build_def.JPG)
+>![Buld definition](https://github.com/kharakhorin/FeatureSync/blob/master/Docs/Img/build_def.JPG)
 
 ### Profit
 >![Sync case](https://github.com/kharakhorin/FeatureSync/blob/master/Docs/Img/sync_case.JPG)
-***
+
 >![Automation](https://github.com/kharakhorin/FeatureSync/blob/master/Docs/Img/automation_case.JPG)
