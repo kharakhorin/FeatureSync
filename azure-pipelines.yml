@@ -32,7 +32,8 @@ steps:
     repositoryName: 'kharakhorin/FeatureSync'
     action: 'create'
     target: '$(Build.SourceVersion)'
-    tagSource: 'gitTag'
+    tagSource: 'userSpecifiedTag'
+    tag: '$(Build.Number)'
     title: 'FeatureSync'
     releaseNotesSource: 'inline'
     addChangeLog: false
