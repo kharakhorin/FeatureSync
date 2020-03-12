@@ -1,5 +1,5 @@
 # FeatureSync
-Synchronization tool for integrating BDD scenarios with Azure DevOps (TFS)
+Synchronization tool for integrating SpecFlow scenarios with Azure DevOps (TFS)
 
 ## How to use
 
