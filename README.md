@@ -1,4 +1,6 @@
 # FeatureSync
+[![Build Status](https://kharakhorin.visualstudio.com/FeatureSync/_apis/build/status/kharakhorin.FeatureSync?branchName=master)](https://kharakhorin.visualstudio.com/FeatureSync/_build/latest?definitionId=1&branchName=master)
+
 Synchronization tool for integrating SpecFlow scenarios with Azure DevOps (TFS)
 
 ## How to use
@@ -12,7 +14,7 @@ Feature: Log to application
 *namespace must be equal to test .dll name
 
 ### 2. Create empty Test Cases in TFS and add tags with id to scenario:
-![Empty case](https://github.com/kharakhorin/FeatureSync/blob/master/Docs/Img/empty_case.JPG)
+>![Empty case](https://github.com/kharakhorin/FeatureSync/blob/master/Docs/Img/empty_case.JPG)
 ```gherkin
 @2122409 @posistive
 Scenario: Successful authorization
@@ -30,8 +32,10 @@ FeatureSync.exe -f C:\FolderWithFeatures -s https://tfs.server.com/collection -t
 ```
 
 I run FeatureSync after buld of test solution
+
 ![Buld definition](https://github.com/kharakhorin/FeatureSync/blob/master/Docs/Img/build_def.JPG)
 
 ### Profit
-![Sync case](https://github.com/kharakhorin/FeatureSync/blob/master/Docs/Img/sync_case.JPG)
-![Automation](https://github.com/kharakhorin/FeatureSync/blob/master/Docs/Img/automation_case.JPG)
+>![Sync case](https://github.com/kharakhorin/FeatureSync/blob/master/Docs/Img/sync_case.JPG)
+***
+>![Automation](https://github.com/kharakhorin/FeatureSync/blob/master/Docs/Img/automation_case.JPG)
