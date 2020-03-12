@@ -9,7 +9,7 @@ Synchronization tool for integrating SpecFlow scenarios with Azure DevOps (TFS)
 @Namespace:Application.Autotests
 Feature: Log to application
 ```
-*namespace must be equal to your .dll name
+*namespace must be equal to test .dll name
 
 ### 2. Create empty Test Cases in TFS and add tags with id to scenario:
 ![Empty case](https://github.com/kharakhorin/FeatureSync/blob/master/Docs/Img/empty_case.JPG)
