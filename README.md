@@ -40,3 +40,6 @@ I run FeatureSync after buld of test solution
 >![Sync case](https://github.com/kharakhorin/FeatureSync/blob/master/Docs/Img/sync_case.JPG)
 
 >![Automation](https://github.com/kharakhorin/FeatureSync/blob/master/Docs/Img/automation_case.JPG)
+
+## Credits
+Special thanks to [@ashamrai](https://github.com/ashamrai) for [TFS API implementation](https://github.com/ashamrai/TFRestApi)
