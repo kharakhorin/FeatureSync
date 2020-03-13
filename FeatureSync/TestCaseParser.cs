@@ -69,7 +69,7 @@ namespace FeatureSync
         {
             var strBuld = new StringBuilder();
             strBuld.Append($"<b>{step.Keyword}</b>");
-            strBuld.Append(HttpUtility.HtmlEncode($"{step.Text.Substring(0, 1).ToLower() + step.Text.Substring(1)}\n"));
+            strBuld.Append(HttpUtility.HtmlEncode($"{step.Text}\n"));
             if (step.Argument != null && step.Argument.GetType() == typeof(DataTable))
             {
                 strBuld.AppendLine();
@@ -82,7 +82,7 @@ namespace FeatureSync
         {
             var strBuld = new StringBuilder();
             strBuld.Append($"<b>{step.Keyword}</b>");
-            strBuld.Append($"{step.Text.Substring(0, 1).ToLower() + step.Text.Substring(1)}\n");
+            strBuld.Append($"{step.Text}\n");
             if (step.Argument != null && step.Argument.GetType() == typeof(DataTable))
             {
                 strBuld.AppendLine();
