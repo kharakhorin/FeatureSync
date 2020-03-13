@@ -1,5 +1,6 @@
 # FeatureSync
 [![Build Status](https://kharakhorin.visualstudio.com/FeatureSync/_apis/build/status/kharakhorin.FeatureSync?branchName=master)](https://kharakhorin.visualstudio.com/FeatureSync/_build/latest?definitionId=1&branchName=master)
+[![Download](https://img.shields.io/github/downloads/kharakhorin/FeatureSync/total.svg)](https://github.com/kharakhorin/FeatureSync/releases/latest/download/FeatureSync.zip)
 
 Synchronization tool for integrating SpecFlow scenarios with Azure DevOps (TFS)
 
