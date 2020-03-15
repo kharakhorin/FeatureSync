@@ -17,7 +17,7 @@ Feature: Log to application
 ### 2. Create empty Test Cases in TFS and add tags with id to scenario:
 >![Empty case](https://github.com/kharakhorin/FeatureSync/blob/master/Docs/Img/empty_case.JPG)
 ```gherkin
-@2122409 @posistive
+@2124573 @posistive
 Scenario: Successful authorization
 	Given I on authorization page
 	And I enter:
